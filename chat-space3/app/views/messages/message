@@ -7,6 +7,13 @@
       %div{class: "sidebar"}
         %div{class: "header"}
           %h3{class: "header_name"} Masa
+          %header{class: "header__lists"}
+            %li{class: "list"}
+              %a{ href: "https://thawing-stream-63240.herokuapp.com/groups/new" }
+                %i{class: "fa fa-pencil-square-o icon"}
+            %li{class: "list"}
+              %a{ href: "https://thawing-stream-63240.herokuapp.com/users/12912/edit" }
+                %i{class: "fa fa-cog icon"}
         %div{class: "groups"}
           %div{class: "group"}
             %div{class: "group__name"} Memo
@@ -32,3 +39,8 @@
               %div{class: "lower-message__content"} hello
         %div{class: "form"}
           %form{class: "js-form"}
+            %input{class: "form__message", placeholder: "type a message"}
+            %div{class: "form__mask"}
+              %label{class: "form__mask__image"}
+                %i{class: "fa fa-picture-o icon"}
+            %input{class: "form__submit", value: "Send", type: "submit"}
